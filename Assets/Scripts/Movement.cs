@@ -17,6 +17,9 @@ public class Movement : MonoBehaviour
 
     public enum Gamemodes{cube = 0, ship = 1};
     public Gamemodes CurrentGamemode;
+ 
+    [SerializeField] private AudioSource DeathSoundEffect;
+    //Add death animation & death process 
 
     Rigidbody2D rb; 
 

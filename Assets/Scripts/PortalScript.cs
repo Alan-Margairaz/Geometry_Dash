@@ -17,4 +17,9 @@ public class PortalScript : MonoBehaviour
         } catch 
         {}
     }
+
+    // private void OnTriggerEnter2D (Collider2D collision)
+    // {
+
+    // }
 }
