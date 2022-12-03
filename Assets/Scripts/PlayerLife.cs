@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerLife : MonoBehaviour
 {
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     //private Animator DeathAnim;
 
     private void Start()
