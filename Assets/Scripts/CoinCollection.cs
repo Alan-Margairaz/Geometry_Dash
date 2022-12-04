@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class CoinCollector : MonoBehaviour
 {
-    private int Coins = 0;
-    // public TMP_Text CoinText;
+    public int Coins = 0;
 
     [SerializeField] private Text CoinsText;
 
@@ -16,9 +15,6 @@ public class CoinCollector : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Coins++;
-
-            // GetComponent<TMP_Text>();
-            // CoinsText.SetText("Coins: " + (string)Coins);
         }
     }
 }

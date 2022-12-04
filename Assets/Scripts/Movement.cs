@@ -18,9 +18,6 @@ public class Movement : MonoBehaviour
 
     public enum Gamemodes{cube = 0, ship = 1};
     public Gamemodes CurrentGamemode;
- 
-    // [SerializeField] private AudioSource DeathSoundEffect;
-    //Add death animation & death process 
 
     Rigidbody2D rb; 
 
@@ -50,19 +47,28 @@ public class Movement : MonoBehaviour
                 }      
             } else 
             {
-                Sprite.Rotate(Vector3.back * RotationSpeed);
+                Sprite.Rotate(Vector3.back * RotationSpeed);    // Rotation en l'air
             } 
         } else
         {
-            if (Input.GetKey(KeyCode.Space))    // Ajoute du mouvement du ship
-            {
-                transform.position += Vector3.right * Speed * Time.deltaTime;
+            Debug.Log("YoGravity&Rotation");
 
+            rb.gravityScale = 0f;
+
+            Vector3 Rotation = Sprite.rotation.eulerAngles;
+            Rotation.z = 0;
+            Sprite.rotation = Quaternion.Euler(Rotation);
+
+            if (Input.GetKey(KeyCode.Space))    // Mouvement du ship
+            {                   
+                Debug.Log("YoMovement");
+                rb.velocity = Vector2.zero;
+                rb.AddForce(Vector2.up * 26.6581f, ForceMode2D.Impulse);
             }
         }
     }
 
-    public void ThroughPortal(Gamemodes Gamemode, int State)
+    public void ThroughPortal(Gamemodes Gamemode, int State)   
     {
         switch(State)
         {

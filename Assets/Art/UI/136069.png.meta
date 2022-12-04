@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 20aa875fa11a341eaa66e3ac7b499e16
+guid: 35e67be1dca0841fdae8ff0ac0e572bf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Buttons_Main_Menu_0
+      name: ProgressBar2
       rect:
         serializedVersion: 2
-        x: 934
-        y: 37
-        width: 166
-        height: 173
+        x: 1
+        y: 58
+        width: 605
+        height: 72
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,92 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a07deb7a41e5142e3b5a6c1817f39175
-      internalID: -893241928
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buttons_Main_Menu_1
-      rect:
-        serializedVersion: 2
-        x: 309
-        y: 24
-        width: 204
-        height: 210
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1e95c15aa8ee44099c64b4795d0a6ca
-      internalID: 128492402
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Start_Button
-      rect:
-        serializedVersion: 2
-        x: 294
-        y: 24
-        width: 216
-        height: 203
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0602d1aba2c9e40d998058e35cf79e27
-      internalID: -815171750
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skin_Button
-      rect:
-        serializedVersion: 2
-        x: 533
-        y: 36
-        width: 178
-        height: 181
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: added2f2735ff4f08a58bbf74170320c
-      internalID: -2066366815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Parametres_Button
-      rect:
-        serializedVersion: 2
-        x: 731
-        y: 28
-        width: 162
-        height: 182
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7301f3c867b7c474eaa8bb2dc96311a2
-      internalID: -600695337
+      spriteID: 8643c6e41385a46e8a700e4b6d1abf2b
+      internalID: -995751169
       vertices: []
       indices: 
       edges: []
@@ -220,11 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Parametres_Button: -600695337
-      Start_Button: -815171750
-      Buttons_Main_Menu_0: -893241928
-      Skin_Button: -2066366815
-      Buttons_Main_Menu_1: 128492402
+      ProgressBar2: -995751169
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

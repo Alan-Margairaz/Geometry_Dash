@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PortalScript : MonoBehaviour
 {
+    public enum Gamemodes{cube = 0, ship = 1};
     public Movement.Gamemodes Gamemode;
     public int State;
 
@@ -11,11 +12,7 @@ public class PortalScript : MonoBehaviour
     public Sprite newSprite;
     public Transform Sprite;
 
-    public Movement ShipMovement;
-
     Rigidbody2D rb;
-
-    //public float Gravity;
 
     void ChangeSprite()
     {
@@ -36,13 +33,21 @@ public class PortalScript : MonoBehaviour
         {
             // Changer gravité
             rb.velocity = Vector2.zero;
-            Physics2D.gravity = new Vector2(0, -9.8f);
-    
-            // reset rotate
+            rb.gravityScale = 0f;
+            
+            Debug.Log("YoPortal");
+
+            // Reset rotate
             Vector3 Rotation = Sprite.rotation.eulerAngles;
             Rotation.z = 0;
             Sprite.rotation = Quaternion.Euler(Rotation);
 
+            if (Input.GetKey(KeyCode.Space))    // Mouvement du ship
+            {                   
+                Debug.Log("YoMovementP");
+                rb.velocity = Vector2.zero;
+                rb.AddForce(Vector2.up * 26.6581f, ForceMode2D.Impulse);
+            }
         } else
         {
 
